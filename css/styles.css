@@ -1,0 +1,850 @@
+/*----------------------------------------
+
+Author:YUCHEN YUAN(Tim)
+Updated:22nd Mar 2014
+Updated by:YUCHEN YUAN(Tim)
+-----------------------------------------*/
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	
+	display:block;
+}
+
+body{
+	
+	font-size:0.825em;
+	color:#fcfcfc;
+	background-color:#ADD8E6;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hyperlink Styles: */
+
+ a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	
+}
+
+
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	
+	font-size:4em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+    
+	font-size:3em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+
+
+/*header*/
+
+
+
+.textSecond{
+    position:absolute;
+	left:11em;
+	top:10em;
+
+}
+
+
+
+
+.pic{
+
+    position:absolute;
+	left:12em;
+	top:1.5em;
+}
+.pic1{
+
+    position:absolute;
+	right:11em;
+	top:1.5em;
+}
+
+
+img{
+    border:1px solid #FCFCFC;
+    /* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:0.5em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:2em 0 ;
+	
+}
+
+ 
+
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+	padding:0 5px;
+	position:absolute;
+	left:1em;
+	top:19.5em;
+	
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+
+
+
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#565656;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#1569C7;
+	margin:1em 0;
+	padding:20px;
+	
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:300px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+figure img{
+	margin-left:-60px;
+	
+}
+
+
+
+
+
+
+
+/* upload page*/
+
+
+
+
+
+
+/*
+	Login page
+*/
+
+
+
+
+.login {
+  position: relative;
+  margin: 80px auto;
+  width: 400px;
+  padding-right: 32px;
+  font-weight: 300;
+  color: black;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+.login p {
+  margin: 0 0 10px;
+}
+
+input, button, label {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+  padding: 0 10px;
+  width: 300px;
+  height: 40px;
+  color: #bbb;
+  text-shadow: 1px 1px 1px black;
+  background: rgba(0, 0, 0, 0.16);
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+input[type=text]:focus, input[type=password]:focus {
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+
+label {
+  float: left;
+  width: 100px;
+  line-height: 40px;
+  padding-right: 10px;
+  font-weight: 100;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.forgot-password {
+  padding-left: 100px;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.login-submit {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+.login-submit:before, .login-submit:after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+}
+.login-submit:before {
+  top: 28px;
+  left: -4px;
+  width: 4px;
+  height: 10px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+.login-submit:after {
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  width: 36px;
+}
+
+.login-button {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  padding: 0 0 48px;
+  /* Fix wrong positioning in Firefox 9 & older (bug 450418) */
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  /* Must use another pseudo element for the gradient background because Webkit */
+  /* clips the background incorrectly inside elements with a border-radius.     */
+}
+.login-button:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: #00a2d3;
+  border-radius: 24px;
+  background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+  background-image: -moz-linear-gradient(top, #00a2d3, #0d7796);
+  background-image: -o-linear-gradient(top, #00a2d3, #0d7796);
+  background-image: linear-gradient(to bottom, #00a2d3, #0d7796);
+  -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+.login-button:active:before {
+  background: #0591ba;
+  background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+  background-image: -moz-linear-gradient(top, #0591ba, #00a2d3);
+  background-image: -o-linear-gradient(top, #0591ba, #00a2d3);
+  background-image: linear-gradient(to bottom, #0591ba, #00a2d3);
+}
+.login-button:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../img/arrow.png") 0 0 no-repeat;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+  line-height: 40px;
+  background: #282828;
+}
+.lt-ie9 .login-submit {
+  position: absolute;
+  top: 12px;
+  right: -28px;
+  padding: 4px;
+}
+.lt-ie9 .login-submit:before, .lt-ie9 .login-submit:after {
+  display: none;
+}
+.lt-ie9 .login-button {
+  line-height: 48px;
+}
+.lt-ie9 .about {
+  background: #313131;
+}
+
+
+
+/*
+	Sign_up page
+
+*/
+
+
+
+#signup-form {
+    background-color: #F2F2F2;
+    border: 1px solid #8A8374;
+    border-radius: 15px 15px 15px 15px;/*背景外框*/
+    
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-top: -15px;
+    padding: 25px 295px 10px;
+	
+	
+    width: 350px;
+	
+}
+
+#signup-form .fieldgroup {
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+	
+	
+}
+
+#signup-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: left;
+    
+	color: black;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+	
+}
+
+#signup-form .fieldgroup p {
+    float: left;
+    padding: 15px 0 0;
+    text-align: left;
+    
+	color: black;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+	
+}
+
+#signup-form .fieldgroup input, #signup-form .fieldgroup textarea, #signup-form .fieldgroup select {
+    float: left;
+    margin: 10px 0;
+    height: 40px;
+}
+
+#signup-form .submit {
+    padding: 10px;
+    width: 120px;
+    height: 40px !important;
+}
+
+#signup-form .fieldgroup .errorlist {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/*
+	Slideshow
+*/
+#example {
+	width:600px;
+	height:350px;
+	position:relative;
+	}
+	
+
+#left{
+   position:absolute;
+   z-index:0;
+   width:220px;
+    height:370px;
+	top:-15px;
+	right:387px;
+
+}
+
+#list{
+   color:black;
+   font-size:1em;
+   font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+   text-shadow:0 1px 1px black;
+   position:absolute;
+   width:220px;
+   top:5px;
+   left:1px;
+    }
+	
+	#login_page {
+	 position:absolute;
+     top:310px;
+	 left:15px;
+	}
+
+
+#frame {
+	position:absolute;
+	z-index:0;
+	background:#efefef url(../img/background.png) repeat top center;
+	width:700px;
+	height:370px;
+	top:-15px;
+	left:224px;
+	}
+	
+
+
+#slides {
+	position:absolute;
+	top:7px;
+	left:290px;
+	z-index:100;
+}
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	Caption
+*/
+
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:540px;
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+
+
+
+
+
+/*form styling:*/
+
+label.valid {
+  width: 24px;
+  background: url(../img/valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+label.error {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+input {
+  display: inline-block;
+}
+
+
+/* Table styling: */
+
+
+dataTable
+{
+	margin-top: 0.5em;
+	border: 1px solid #DDDDDD;
+  	border-collapse: collapse;
+	padding: 0 5px 0 0;
+	
+	
+}
+
+
+th
+{
+  border: 1px solid #385708;
+	border-bottom: 4px solid #2A4106;
+	padding: 8px 15px;
+	background-color: #385708;
+	color: #FFFF00;
+	text-align: left;
+}
+
+td
+{
+	padding: 6px 15px;
+}
+
+
+tr  {
+       background-color:#282828 ;
+    }
+tr.alt
+    {
+	background-color:#585858;
+    }
+
+/*gallery styling:*/
+#wrapper {
+  width: 800px;
+  margin: 25px auto;
+}
+
+#intro {
+  padding-bottom: 10px;
+}
+
+.slider {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border: 10px solid #ccc;
+}
+
+.scroll {
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scrollContainer {
+  position: relative;
+}
+
+.scrollContainer div.panel {
+  padding: 10px;
+  width: 274px;
+  height: 318px;
+}
+
+.left-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  bottom: 0;
+  background: url(../images/leftshadow.png) repeat-y;
+}
+
+.right-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  bottom: 0;
+  background: url(../images/rightshadow.png) repeat-y;
+}
+
+.inside {
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+.inside img {
+  display: block;
+  border: 1px solid #666;
+  margin: 0 0 10px 0;
+  width: 250px;
+}
+
+.inside h2 {
+  font-weight: normal;
+  color: #111;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.inside p {
+  font-size: 11px;
+  color: #ccc;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+a:hover {
+  border-bottom: 1px solid #999;
+}
+
+.scrollButtons {
+  position: absolute;
+  top: 127px;
+  cursor: pointer;
+}
+
+.scrollButtons.left {
+  left: -45px;
+}
+
+.scrollButtons.right {
+  right: -45px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+
+
+
